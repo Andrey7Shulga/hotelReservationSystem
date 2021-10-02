@@ -5,10 +5,7 @@ import model.Customer;
 import model.IRoom;
 import model.Reservation;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.regex.Pattern;
 
 public class MainMenu {
 
@@ -152,39 +149,6 @@ public class MainMenu {
             }
         actions();
     }
-
-//    private static boolean checkADate (String enteredDate) {
-//        String dataRegEx = "^(0[1-9]|1[0-2])[\\/](0[1-9]|[12][\\d]|3[0-1])[\\/](20|21)\\d{2}$";
-//        Pattern pattern = Pattern.compile(dataRegEx);
-//        return pattern.matcher(enteredDate).matches();
-//    }
-//
-//    private static Date storeADate (String inOut) {
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy");
-//        String userInput;
-//        Date date = new Date();
-//
-//        do {
-//            System.out.println("Enter your check " + inOut + " date in mm/dd/yyyy format");
-//            userInput = scanner.next();
-//            if (!checkADate(userInput)) {
-//                System.out.println("Your check " + inOut + " date is not correct: " + userInput);
-//            }
-//        } while (!checkADate(userInput));
-//        try {
-//            date = simpleDateFormat.parse(userInput);
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//        return date;
-//    }
-//
-//    static Date getNewDateForward (Date date, int numberOfDays) {
-//        Calendar calendar = Calendar.getInstance();
-//        calendar.setTime(date);
-//        calendar.add(Calendar.DAY_OF_MONTH, numberOfDays);
-//        return calendar.getTime();
-//    }
 
     private static void displayCustomerReservations () {
         System.out.println("Please, enter a customer e-mail");
